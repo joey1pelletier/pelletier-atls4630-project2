@@ -1,14 +1,18 @@
+import './App.css';
+import UserFear from './UserFear';
 
-import './App.css'
+
 
 function App() {
-  
-
   return (
-    <>
-      <p>Limit Break</p>
-    </>
-  )
+    <div className="LimitBreak">
+      <h1>LIMIT BREAK</h1>
+      <p>This app is designed to help the user create steps to overcome their fears</p>
+      
+      < UserFear />
+     
+    </div>
+  );
 }
 
-export default App
+export default App;
