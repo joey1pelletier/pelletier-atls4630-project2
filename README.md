@@ -34,7 +34,7 @@ For steps 1, 3, and 4, of 'Thinking in React', we figured out a UI scheme with t
 
 After we figured that out, we decided to practice React (mainly learning how to do the note-taking app) by ourselves. After my practice, I developed a web app that has the basic parts and design of my intended prototype, albeit the complexity is skimmed down. The user can type in their fear in a text box, and then it will show up on a "fear tree" after clicking the button.
 
-![image of Joey's prototype app](img/project2-ui.png)
+![image of Joey's prototype app](img/joey-wip-proto.png)
 
 My site can be accessed here: https://pelletier-atls4630-note-taking.vercel.app/
 
