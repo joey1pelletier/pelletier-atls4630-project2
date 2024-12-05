@@ -25,4 +25,12 @@ MVP: Stylized app with functionalities surrounded by red border in the user flow
 
 Stretch goals: Add other items from user flow, like the confidence numbers and a resources tab for example.
 
+## Milestone 2
+
+### Joey's Process
+
+For steps 1, 3, and 4, of 'Thinking in React', we figured out a UI scheme with the planned actions of state. Essentially, our goal was to figure out how to implement the note-taking part of the app. The drawing is shown below:
+![image of app UI in drawing](img/project2-ui.png)
+
+
 
