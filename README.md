@@ -32,5 +32,11 @@ Stretch goals: Add other items from user flow, like the confidence numbers and a
 For steps 1, 3, and 4, of 'Thinking in React', we figured out a UI scheme with the planned actions of state. Essentially, our goal was to figure out how to implement the note-taking part of the app. The drawing is shown below:
 ![image of app UI in drawing](img/project2-ui.png)
 
+After we figured that out, we decided to practice React (mainly learning how to do the note-taking app) by ourselves. After my practice, I developed a web app that has the basic parts and design of my intended prototype, albeit the complexity is skimmed down. The user can type in their fear in a text box, and then it will show up on a "fear tree" after clicking the button.
 
+![image of Joey's prototype app](img/project2-ui.png)
+
+My site can be accessed here: https://pelletier-atls4630-note-taking.vercel.app/
+
+Moving forward with the process, we are planning to compare designs and practice on 12/5. That way, we can demonstrate what we learned, and continue to iterate through the design process and achieve a full-functioning MVP.
 
