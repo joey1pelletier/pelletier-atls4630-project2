@@ -1,28 +1,30 @@
 import { useState } from "react";
 
-export default function UserFear() {
+export default function UserFear({ onFearEntry }) {
   const [FEAR, setFEAR] = useState('');
-  const [CurrFEAR, setCurFEAR] = useState('');
+  const [Message, setMessage]= ('')
+  
 
-  const handleChange = (event) => {
+const handleChange = (event) => {
     setFEAR(event.target.value);
   };
 
   const handleClick = () => {
-    if (FEAR.trim() !== "") {
-      setCurFEAR(FEAR); 
+    if (FEAR.trim() !== '') {
+      onFearEntry(FEAR); 
       setFEAR(''); 
+      setMessage('to overcome fears, it is important to create smaller goals to work towards overcoming bigger fears')
+      
     }
   };
 
   return (
     <>
+     
       <p>What is your fear?</p>
-
       <div className="Fear">
         <div className="TheUserFear">
           <label htmlFor="userfear" className="form-label"></label>
-
           <input
             type="text"
             className="FEAR"
@@ -33,28 +35,9 @@ export default function UserFear() {
           />
           <br />
           <button type="button" className="EnterFearbtn" onClick={handleClick}>
-            ENTER
+            Submit
           </button>
         </div>
-      </div>
-
-      <div className="TheUserFear">
-        {CurrFEAR === '' ? (
-          <p>No fears stored</p>
-        ) : (
-          <table>
-            <thead>
-              <tr>
-                <th>Fear</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{CurrFEAR}</td>
-              </tr>
-            </tbody>
-          </table>
-        )}
       </div>
     </>
   );
