@@ -1,42 +1,83 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #77F2FF;
+  height: 100vh; 
+  width: 100%;
+  display: block;
+  align-items: center;
+}
+
+.LimitBreak {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+  flex-direction: column;  
+  text-align: center;     
+}
+
+h1 {
+  font-size: 40pt;
+  color: #FF8658;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #4B7CCC;
+}
+
+/* Form styling */
+.Fear {
+  margin-bottom: 30px;
+}
+
+.TheUserFear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FEAR {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #0077cc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.EnterFearbtn {
+  background-color: #FF8658;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.EnterFearbtn:hover {
+  background-color: #005fa3;
+}
+
+table {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 3px solid #FF8658;
   text-align: center;
+  padding: 10px;
+  background-color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+th {
+  background-color: #FF8658;
+  color: white;
 }
