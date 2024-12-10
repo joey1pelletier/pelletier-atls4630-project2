@@ -16,12 +16,21 @@ function App() {
 
   function isNotOnScreen() {
     setSection_ON(false);
-    
   }
   
   function handleUserFearInput(fear) {
-    setUserFear(fear);
+    setUserFear(fear); 
     setSection_ON(false); 
+  }
+
+  function handleReset(){ 
+    setUserFear(''); 
+    setSection_ON(false); 
+    setButtonClicked(false); 
+  }
+
+  function handleUserSteps(){
+      // handle user steps entry 
   }
 
 
@@ -30,21 +39,23 @@ function App() {
     <div className="LimitBreak">
       <h1>LIMIT BREAK</h1>
       
-      {!buttonClicked && <p>this app is designed to help the user overcome their fears</p>}
+      {!buttonClicked && <p>This app is designed to help the user overcome their fears</p>}
       
       <div className='UserFear'>
-      {!buttonClicked && <button onClick={isOnScreen}>Start</button>}  
+      {!buttonClicked && <button className='start' onClick={isOnScreen}>Start</button>}  
         {section_ON && <UserFear onFearEntry={handleUserFearInput} />}
       </div>
 
       <div className='StoredUserFear'>
-        {userFear && <StoredUserFear User_Fear={userFear} isNotOnScreen={isNotOnScreen} />}
-        
-        {buttonClicked && <button onClick={isOnScreen}>Create Steps</button>} 
+        {userFear && (
+          <>
+           <StoredUserFear User_Fear={userFear} isNotOnScreen={isNotOnScreen} />
+           <button className='reset' onClick={handleReset}>Reset</button>
+           <button className='create-steps' onClick={handleUserSteps}>Enter Steps</button>
+          </>
+        )}
+       
       </div>
-
-
-
 
     </div>
   );

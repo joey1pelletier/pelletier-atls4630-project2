@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #77F2FF;
+  background-color: #91B7D9;
   height: 100vh; 
   width: 100%;
   display: block;
@@ -19,18 +19,38 @@ body {
 }
 
 h1 {
-  font-size: 40pt;
-  color: #FF8658;
+  font-size: 70pt;
+  color: #163A59;
   margin-bottom: 10px;
+  background-color:#F39B6D;
+  border-radius: 10px;
+  padding: 40pt 70pt;
+  font-family: Impact;
+  border: 10px solid;
 }
 
 p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #4B7CCC;
+  color: #F39B6D;
+  background-color: #163A59;
+  padding: 20pt 48pt;
+  border-radius: 10px;
+
 }
 
-/* Form styling */
+.start{
+  padding: 10pt 40pt; 
+  color:#163A59;
+  background-color: white;
+  border: 5px solid #FF8658;
+}
+
+.start:hover{
+  border: 5px solid #163A59;
+}
+
+
 .Fear {
   margin-bottom: 30px;
 }
@@ -51,33 +71,46 @@ p {
 }
 
 .EnterFearbtn {
-  background-color: #FF8658;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+  padding: 10pt 40pt; 
+  color:#163A59;
+  background-color: white;
+  border: 5px solid #FF8658;
 }
 
 .EnterFearbtn:hover {
-  background-color: #005fa3;
+  border: 5px solid #163A59;
 }
 
 table {
   width: 100%;
   max-width: 500px;
   margin-top: 20px;
+  
 }
 
 th, td {
-  border: 3px solid #FF8658;
+  border: 3px solid #D9C9BA; 
   text-align: center;
   padding: 10px;
   background-color: white;
 }
 
 th {
-  background-color: #FF8658;
+  background-color: #D9C9BA; 
+  color: rgb(0, 0, 0);
+}
+
+
+
+.reset{
+  background-color:#005fa3; 
   color: white;
+  margin-top: 20px; 
+  margin-right: 10px;
+}
+
+.create-steps{
+  background-color:#000000; 
+  color: white;
+  margin-top: 20px; 
 }

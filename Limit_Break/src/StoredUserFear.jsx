@@ -7,7 +7,7 @@ export default function StoredUserFear({ User_Fear, isNotOnScreen }) {
         <table>
           <thead>
             <tr>
-              <th>Fear</th>
+              <th>FEAR</th>
             </tr>
           </thead>
           <tbody>

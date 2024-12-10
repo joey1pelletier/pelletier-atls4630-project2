@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function UserFear({ onFearEntry }) {
   const [FEAR, setFEAR] = useState('');
-  const [Message, setMessage]= ('')
+  const [Message, setMessage]= useState('')
   
 
 const handleChange = (event) => {
