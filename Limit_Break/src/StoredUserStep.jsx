@@ -1,5 +1,9 @@
-export default function StoredUserStep({ User_Step, isNotOnScreen }) {
-    return (
+export default function StoredUserStep({ User_Step, stepIndex, onRemoveStep }) {
+  const handleCheckboxClick = () => {
+    onRemoveStep(stepIndex)
+  }; 
+  
+  return (
       <div className="TheUserStep">
         {User_Step === '' ? (
           <p>No steps stored</p>
@@ -7,10 +11,12 @@ export default function StoredUserStep({ User_Step, isNotOnScreen }) {
           <table>
             <thead>
                 <tr className="checkbox-style">
-                <input type="checkbox" />
+                <input type="checkbox" id={`step-${stepIndex}`} onClick={handleCheckboxClick} />
+                <label htmlFor={`step-${stepIndex}`}></label> {/* Custom label for checkbox */}
                 </tr>
               <tr>
-                <th className="step-header">STEP</th>
+                <th className="step-header">STEP {stepIndex +1}</th>
+                
               </tr>
             </thead>
             <tbody>

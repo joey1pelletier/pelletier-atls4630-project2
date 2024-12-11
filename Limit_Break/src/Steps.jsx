@@ -24,10 +24,17 @@ const handleChange = (event) => {
     <>
     {!stepSubmitted && (
         <>
-            <p>What step would you like to add?</p>
-        <div className="Fear">
-          <div className="TheUserFear">
-            <label htmlFor="userfear" className="form-label"></label>
+            <p>To overcome fears, it is important to create smaller goals <br></br>to work towards overcoming bigger fears</p>
+            <p> What step would you like to add?</p> 
+       
+           {/* <div className="Fear"> */}
+           {/* <div className="TheUserFear"> */}
+           {/* <label htmlFor="userfear" className="form-label"></label> */}
+
+           <div className="Steps">
+          <div className="TheUserSteps">
+          <label htmlFor="userSteps" className="form-label"></label>
+           
             <input
               type="text"
               className="STEP"
@@ -36,9 +43,9 @@ const handleChange = (event) => {
               onChange={handleChange}
               value={STEP}
             />
-            <br />
-            <button type="button" className="EnterFearbtn" onClick={handleClick}>
-              Submit
+            <br/>
+            <button type="button" className="EnterStepBtn" onClick={handleClick}>
+              Enter
             </button>
           </div>
         </div>
