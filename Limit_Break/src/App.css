@@ -85,7 +85,6 @@ table {
   width: 100%;
   max-width: 500px;
   margin-top: 20px;
-  
 }
 
 th, td {
@@ -93,6 +92,19 @@ th, td {
   text-align: center;
   padding: 10px;
   background-color: white;
+  color: black;
+}
+
+.StoredUserSteps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-style {
+  padding: 0;
+  display: inline-block;
 }
 
 th {
@@ -113,4 +125,9 @@ th {
   background-color:#000000; 
   color: white;
   margin-top: 20px; 
+}
+
+.step-header {
+  background-color: rgb(100, 98, 98);
+  color: white;
 }
