@@ -40,3 +40,10 @@ My site can be accessed here: https://pelletier-atls4630-note-taking.vercel.app/
 
 Moving forward with the process, we are planning to compare designs and practice on 12/5. That way, we can demonstrate what we learned, and continue to iterate through the design process and achieve a full-functioning MVP.
 
+## Milestone 4: Reflection
+
+### Joey's Reflection
+
+After going through the process of working on a group React project, it was definitely a new challenge for me. That was the first time I've ever coded with a group, and I realized how hard it is to connect multiple people's coding ideas together. I believe my teammate's code was well put-together and efficiently commented, it's just I need to practice more on reading and understanding other people's code. I'll be completely honest, I was not finishing this semester as strong as I thought I would. I could've done more on my parts, so I take accountability for that.
+
+Nevertheless, we managed to create a stylized, full-functioning MVP (without the description part, though). My teammate did a very good job with the styling of the app, and I'll keep this design in mind when coming up with different designs for my capstone project. The big challenge was definitely applying React skills to a group project, and collabrating together with our codes. I'm also not the best at React right now, so this was a good learning experience that shows where I'm at with my knowledge. I now have a better idea on how to hide/display different components and how to display user input onto the app.
